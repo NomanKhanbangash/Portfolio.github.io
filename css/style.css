@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+:root{
+    --header_color:#34495e;
+    --color2:#f1c40f;
+    --body_color:#ecf0f1;
+    --text_color:#111;
+
+}
+::-webkit-scrollbar{
+    width:2rem;
+}
+::-webkit-scrollbar-track{
+    background:#666;
+}
+::-webkit-scrollbar-thumb{
+    background:var(--color2);
+    border-radius:.5rem;
+}
+.other_theme{
+    --header_color:#2d3436;
+    --color2:green;
+    --body_color:#111;
+    --text_color:#fff;
+}
+::-webkit-scrollbar-track{
+    width:1.5rem;
+}
+*,
+*::before,
+*::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    line-height:1.5;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background:var(--body_color);
+    padding-left:30rem;
+}
+ul li{
+    list-style: none;
+}
+section{
+    padding:2rem 6%;
+    min-height:100vh;
+}
+.btn{
+    display: inline-block;
+    margin-top:1rem;
+    background:transparent;
+    border:.3rem solid var(--color2);
+    text-decoration: none;
+    color:var(--text_color);
+    font-size:1.8rem;
+    padding:.7rem 3rem;
+}
+.btn:hover{
+    background:var(--color2);
+    color: white;
+}
+.heading{
+    font-size:4rem;
+    padding-bottom:1rem;
+    color:var(--text_color);
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'STIX Two Math', serif;
+}
+.heading span{
+    color:var(--color2);
+}
+
+/*  Header Section */
+header{
+    background:var(--header_color);
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    padding:6rem 2rem;
+    text-align: center;
+    z-index:1000;
+}
+header .top_sec{
+    text-align: center;
+}
+header .top_sec .image{
+    width:14rem;
+    height:14rem;
+    background: wheat;
+    border-radius: 50%;
+    background: url(../images/port.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border:.5rem solid var(--color2);
+}
+header .top_sec .name{
+    color:white;
+    font-size:2rem;
+    text-transform: uppercase;
+    margin-top:1.5rem;
+    font-family: 'STIX Two Math', serif;
+}
+header .top_sec .name span{
+    color:var(--color2);
+}
+header .navbar {
+    width:100%;
+    margin-top:2rem;
+}
+header .navbar a{
+    display: block;
+    font-size:1.6rem;
+    text-transform:capitalize;
+    color: white;
+    text-decoration:none;
+    margin:1rem 0;
+    width:100%;
+    padding:1rem;
+}
+header .navbar a:hover{
+    background:var(--color2);
+}
+header .navbar a.active{
+    background: var(--color2);
+}
+header .social{
+    margin-top:2rem;
+}
+header .social a{
+    color: white;
+    text-decoration: none;
+    margin:0 2rem;
+    font-size:2rem;
+}
+header .social a:hover{
+    color:var(--color2);
+}
+#menu_bar{
+    position: fixed;
+    top:1rem;
+    right:1rem;
+    background: var(--color2);
+    color:#fff;
+    font-size:2rem;
+    z-index:10000;
+    border-radius:.5rem;
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* / Header Section */
+
+/* Home Section */
+
+
+.home{
+    display: flex;
+    align-items: center;
+}
+
+.home .hi{
+    font-size:2rem;
+    color:var(--color2);
+}
+.home h3{
+    font-size:4.3rem;
+    font-family: 'STIX Two Math', serif;
+    color: var(--text_color);
+}
+.home h3 span{
+    color: var(--color2);
+}
+.home .info{
+    font-size:2.5rem;
+    color:var(--text_color);
+    padding:.5rem 0;
+}
+.home .text{
+    font-size:1.7rem;
+    color:#666;
+    max-width:50rem;
+}
+.home .info .developer{
+    font-size:4rem;
+    color:#e67e22;
+    font-weight: 700;
+}
+
+/* / Home Section */
+
+
+/* skills Section */
+.skills .skills_sec progress{
+    padding:1rem 0;
+}
+.skills_sec .progress h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.7rem 0;
+    font-size:1.7rem;
+    font-weight:400;
+    color:var(--text_color);
+}
+.skills_sec .progress h3 span{
+    font-size:2rem;
+}
+.skills_sec .progress .bar{
+    width:100%;
+    background:#ccc;
+    overflow:hidden;
+    height:2rem;
+    border-radius:50rem;
+}
+.skills_sec .progress .bar span{
+    height:100%;
+    display: block;
+    background:var(--color2);
+}
+.skills_sec .progress:nth-child(1) .bar span{
+    width:100%;
+}
+
+.skills_sec .progress:nth-child(2) .bar span{
+    width:90%;
+}
+.skills_sec .progress:nth-child(3) .bar span{
+    width:85%;
+}
+.skills_sec .progress:nth-child(4) .bar span{
+    width:50%;
+}
+.skills_sec .progress:nth-child(5) .bar span{
+    width:50%;
+}
+.skills_sec .progress:nth-child(6) .bar span{
+    width:50%;
+}
+.skills_sec .progress:nth-child(7) .bar span{
+    width:60%;
+}
+/*/ skills Section */
+.servicess .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    justify-content: center;
+    min-height:70vh;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:2rem;
+}
+.servicess .box-container .box{
+    flex:1 1 25rem;
+    background:white;
+    text-align: center;
+    padding:1.7rem;
+    box-shadow:0.5rem 2rem 2rem 2px rgb(0 0 0 / 6%);
+}
+.servicess .box-container .box i{
+    width:7rem;
+    height:7rem;
+    line-height:7rem;
+    background: var(--color2);
+    font-size:3rem;
+    border-radius:50%;
+    color: white;
+}
+.servicess .box-container .box:hover i{
+    background: chartreuse;
+} 
+.servicess .box-container .box h3{
+    font-size:2rem;
+    padding:.2rem 0;
+}
+.servicess .box-container .box p{
+    font-size:1.7rem;
+    color:#666;
+}
+
+
+
+
+
+
+/* contact Section */
+
+.contact .container_data{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.contact .container_data form{
+    flex:1 1 50rem;
+    background:white;
+    padding:2rem;
+    border: none;
+}
+.contact .container_data iframe{
+    flex:1 1 40rem;
+}
+.contact .container_data form input,
+.contact .container_data form textarea{
+    display: block;
+    width:100%;
+    margin:1rem 0;
+    padding:.8rem;
+    border: .1rem solid rgba(0,0,0,.7);
+}
+.contact .container_data form input:focus,
+.contact .container_data form textarea:focus{
+    outline: none;
+}
+
+.contact .container_data form input::placeholder,
+.contact .container_data form textarea::placeholder{
+    text-transform: capitalize;
+}
+.contact .container_data form textarea{
+    height:20rem;
+    resize: none;
+}
+.contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-bottom:1rem;
+}
+.contact .box-container .box{
+    flex:1 1 20rem;
+    text-align: center;
+    background:white;
+    padding:1.7rem;
+}
+.contact .box-container .box i{
+    width:4rem;
+    height:4rem;
+    line-height:4rem;
+    text-align: center;
+    background:var(--color2);
+    color: white;
+    font-size: 2rem;
+    border-radius:50%;
+}
+.contact .box-container .box h2{
+    font-size:1.7rem;
+    padding:.5rem 0;
+}
+/* / contact Section */
+.btn_1{
+    background:#4cd137;
+    color: white;
+}
+footer{
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    box-shadow:3rem -5rem 12rem 20px rgb(0 0 0 / 6%);
+}
+footer p{
+    font-size:1.7rem;
+    
+}
+
+
+/* education */
+.education .grid_data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+}
+.education .grid_data .item{
+    background: white;
+    box-shadow:0.5rem 2rem 2rem 2px rgb(0 0 0 / 6%);
+    padding:2rem;
+}
+.education .grid_data .item .title{
+    font-size:2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.education .grid_data .item .title span{
+    font-size:2.5rem;
+    color:var(--color2);
+}
+.education .grid_data .item h3{
+    display: flex;
+    justify-content: space-between;
+    padding:.6rem 0;
+    font-size:2rem;
+}
+.education .grid_data .item .uni{
+    font-size:1.6rem;
+    color:#666;
+}
+#icon{
+    width:4rem;
+    height:4rem;
+    line-height:4rem;
+    background:#111;
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    color:white;
+    border-radius:.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#back_to_top{
+    position: fixed;
+    right:3rem;
+    bottom:3rem;
+    background:var(--color2);
+    width:4rem;
+    height:4rem;
+    line-height:4rem;
+    text-align: center;
+    font-size:2rem;
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+/* / education */
+
+
+
+/* Media queres */
+@media (max-width:991px){
+    html{
+        font-size:55%;
+    }
+    body{
+        padding:0;
+    }
+    #menu_bar{
+        display: initial;
+    }
+    header{
+        left:-120%;
+    }
+    header.active{
+        left:0;
+    }
+    .education .grid_data{
+        grid-template-columns:repeat(1,1fr);
+    }
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+    header{
+        width:100%;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .info .developer{
+        font-size:3rem;
+    }
+    .education .grid_data{
+        grid-template-columns:repeat(1,1fr);
+    }
+    #icon{
+        position: absolute;
+        top:2rem;
+        left:2rem;
+    }
+}
+
+
+/* / Media queres */
