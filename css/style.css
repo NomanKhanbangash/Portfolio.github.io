@@ -16,6 +16,10 @@
     background:var(--color2);
     border-radius:.5rem;
 }
+::selection{
+    background:var(--color2);
+    color:white;
+}
 .other_theme{
     --header_color:#2d3436;
     --color2:green;
